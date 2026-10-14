@@ -1,288 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Prism Shift: build light, break darkness</title>
-  <meta name="description" content="Prism Shift is a music-driven crystal puzzle game for iPhone, iPad and Apple TV. Build networks, bank them for the Pulse Line, and hold back the dark tide across fifteen levels and three worlds." />
-  <link rel="canonical" href="https://prismshift.remnantsecurity.com/" />
-  <meta name="theme-color" content="#06030f" />
-  <meta name="color-scheme" content="dark" />
-  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Remnant Security" />
-  <meta property="og:url" content="https://prismshift.remnantsecurity.com/" />
-  <meta property="og:title" content="Prism Shift: build light, break darkness" />
-  <meta property="og:description" content="A music-driven crystal puzzle game for iPhone, iPad and Apple TV. Fifteen levels, three worlds, and a soundtrack that reacts to how you play." />
-  <meta property="og:image" content="https://prismshift.remnantsecurity.com/img/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Prism Shift key art: a cyan and magenta crystal above the gold Prism Shift title." />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Prism Shift: build light, break darkness" />
-  <meta name="twitter:description" content="A music-driven crystal puzzle game for iPhone, iPad and Apple TV. Coming soon." />
-  <meta name="twitter:image" content="https://prismshift.remnantsecurity.com/img/og-image.jpg" />
-  <meta name="twitter:image:alt" content="Prism Shift key art: a cyan and magenta crystal above the gold Prism Shift title." />
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"VideoGame","name":"Prism Shift",
-   "url":"https://prismshift.remnantsecurity.com/",
-   "image":"https://prismshift.remnantsecurity.com/img/og-image.jpg",
-   "description":"A musical crystal puzzle game: connect crystals, charge them, and bank networks for the Pulse Line while a dark tide rises beneath the board. Fifteen levels across three worlds, plus the endless Abyss mode.",
-   "genre":["Puzzle","Music"],"gamePlatform":["iPhone","iPad","Apple TV"],"operatingSystem":"iOS, iPadOS, tvOS",
-   "playMode":"SinglePlayer","publisher":{"@type":"Organization","name":"Remnant Security","url":"https://remnantsecurity.com/"}}
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@400;500;600&family=Unbounded:wght@600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="prismshift.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09071d">
+  <meta name="description" content="Prism Shift is a homebrew rhythm puzzle game for iPhone and Apple TV. Build connected crystal networks, bank the sweep, and journey through fifteen audiovisual skins.">
+  <link rel="canonical" href="https://prismshift.remnantsecurity.com/">
+  <link rel="icon" href="assets/prism.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Prism Shift — Build the light.</title>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<div class="topbar">
-  <a class="brand" href="#top">
-    <img src="img/icon-512.webp" width="30" height="30" alt="" />
-    Prism Shift
-  </a>
-  <nav>
-    <a class="hide-sm" href="#play">How it plays</a>
-    <a class="hide-sm" href="#worlds">Worlds</a>
-    <a class="hide-sm" href="#music">Music</a>
-    <a class="hide-sm" href="#access">Accessibility</a>
-    <a href="#get">Get it</a>
-  </nav>
-</div>
-
-<header class="hero wrap" id="top">
-  <picture>
-    <source type="image/webp" srcset="img/hero-1000.webp 1000w, img/hero-1600.webp 1600w"
-            sizes="(max-width: 900px) 100vw, 860px" />
-    <img class="hero-art" src="img/hero-1600.jpg" width="1600" height="960"
-         alt="Prism Shift key art: a cyan and magenta crystal split by a lightning bolt, above the gold Prism Shift title, set in a violet crystal cavern."
-         fetchpriority="high" />
-  </picture>
-  <p class="badge">Coming soon &middot; iPhone &middot; iPad &middot; Apple TV</p>
-  <h1 class="tagline">Build the light.<br />Break the darkness.</h1>
-  <p class="lede">
-    A musical crystal puzzle game where a match is only the beginning. Connect crystals,
-    let them charge, and build while the Pulse Line approaches &mdash; then bank several
-    networks for one sweep and multiply their energy.
-  </p>
-  <div class="cta">
-    <a class="btn btn-primary" href="#play">See how it plays</a>
-    <a class="btn btn-ghost" href="#worlds">Fifteen levels</a>
-  </div>
-</header>
-
-<main id="main">
-
-  <div class="wrap">
-    <section class="stats" aria-label="At a glance">
-      <div class="stat"><b>15</b><span>Levels</span></div>
-      <div class="stat"><b>3</b><span>Worlds</span></div>
-      <div class="stat"><b>5</b><span>Music layers</span></div>
-      <div class="stat"><b>8</b><span>Achievements</span></div>
-    </section>
-  </div>
-
-  <section class="section wrap" id="play">
-    <div class="sec-head">
-      <p class="eyebrow">How it plays</p>
-      <h2>A match is only the beginning</h2>
-      <p>
-        Connect three or more crystals of one colour and let them charge. The Pulse Line
-        sweeps the board in time with the music and ignites everything you have built,
-        triggering cascades. Hold your nerve and bank several networks for a single sweep.
-      </p>
-    </div>
-    <div class="grid cols-3">
-      <article class="card">
-        <div class="ico" aria-hidden="true">◆</div>
-        <h3>Connect and charge</h3>
-        <p>Three or more crystals of one colour form a network. It does not clear &mdash; it charges, and waits.</p>
-      </article>
-      <article class="card">
-        <div class="ico" aria-hidden="true">⟋</div>
-        <h3>Bank for the sweep</h3>
-        <p>Several charged networks caught by one pass of the Pulse Line multiply their energy together.</p>
-      </article>
-      <article class="card">
-        <div class="ico" aria-hidden="true">≈</div>
-        <h3>Break the dark tide</h3>
-        <p>A dark tide rises beneath the board. Ignite light at its edge to push it back and reclaim room to build.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="worlds">
-    <div class="sec-head">
-      <p class="eyebrow">One continuous journey</p>
-      <h2>Fifteen levels, three worlds</h2>
-      <p>
-        Your board travels with you as the music, palette and objectives change. Tempo climbs
-        from 90 to 156 BPM across the campaign, and every level hands off to the next without a break.
-      </p>
-    </div>
-
-    <section class="world">
-      <div class="world-head">
-        <h3>First Light</h3>
-        <span class="meta">World one &middot; Levels 1&ndash;5 &middot; 90&ndash;120 BPM</span>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="#" aria-label="Prism Shift home"><img src="assets/prism.png" alt="" width="36" height="48">PRISM SHIFT</a>
+    <nav aria-label="Main"><a href="#play">The game</a><a href="#worlds">The skins</a><a href="#accessibility">Play your way</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <h1 id="title">Build the light.<br><span>Break the darkness.</span></h1>
+        <p class="availability">A homebrew game for iPhone &amp; Apple TV · In development</p>
+        <p class="intro">Find a rhythm in falling crystals. Connect, compose, and watch your world answer every clear.</p>
+        <div class="actions"><a class="primary" href="#play">Watch the game</a><a href="#worlds">Explore the fifteen skins</a></div>
+        <p class="release">Development builds are being tested. A public download is not available yet.</p>
       </div>
-      <p>The ramp. Tempo and fall speed climb and the survival runway shortens, so every level plays faster than the last without changing the rules.</p>
-      <div class="shots">
-        <figure class="shot"><img src="img/level-01_awakening.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level one, Awakening." /><figcaption><b>Awakening</b>90 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-02_ripples.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level two, Ripples." /><figcaption><b>Ripples</b>96 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-03_bloom.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level three, Bloom." /><figcaption><b>Bloom</b>102 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-04_pulse.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level four, Pulse." /><figcaption><b>Pulse</b>110 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-05_harmony.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level five, Harmony." /><figcaption><b>Harmony</b>120 BPM</figcaption></figure>
+      <figure class="hero-game"><img src="assets/awakening.webp" alt="Actual Prism Shift gameplay: amber and lavender crystals with the glowing Pulse Line sweeping across a crystal world." width="750" height="1334"><figcaption>Awakening · Actual development gameplay</figcaption></figure>
+    </section>
+    <section id="play" class="play" aria-labelledby="play-title">
+      <div class="section-heading"><h2 id="play-title">Make a match.<br>Make it matter.</h2><p>Three or more crystals of the same type, connected side to side, charge a network. They wait for the Pulse Line. Build another before the sweep arrives, and bank a bigger payoff.</p></div>
+      <div class="gameplay">
+        <video controls playsinline preload="metadata" poster="assets/awakening.webp" aria-label="Prism Shift Awakening development gameplay"><source src="assets/awakening-gameplay-soundtrack.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/awakening-gameplay-soundtrack.mp4">Open the gameplay recording.</a></video>
+        <div class="gameplay-copy"><h3>The sweep is your instrument.</h3><p>Rotations, drops, and clears bring light and sound into the world. Each skin pairs its own crystal material with a soundtrack, and music fades into the next as the journey progresses.</p><p>A Core block activates inside a valid match, reaching through the connected same-type chain. Isolated blocks elsewhere stay on the board.</p><p class="caption">Awakening · Press Play to hear the game’s soundtrack. Music added to the October 13 development footage; this preview does not include live gameplay sound effects.</p></div>
       </div>
     </section>
-
-    <section class="world">
-      <div class="world-head">
-        <h3>Neon District</h3>
-        <span class="meta">World two &middot; Levels 6&ndash;10 &middot; 124&ndash;156 BPM</span>
-      </div>
-      <p>The city turns the lights on. A fifth crystal colour joins the board, the tempo climbs past First Light's ceiling, and the Pulse Line starts to bend off its straight path.</p>
-      <div class="shots">
-        <figure class="shot"><img src="img/level-06_voltage.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level six, Voltage." /><figcaption><b>Voltage</b>124 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-07_drift.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level seven, Drift." /><figcaption><b>Drift</b>132 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-08_glitch.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level eight, Glitch." /><figcaption><b>Glitch</b>140 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-09_overdrive.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level nine, Overdrive." /><figcaption><b>Overdrive</b>148 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-10_blackout.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level ten, Blackout." /><figcaption><b>Blackout</b>156 BPM</figcaption></figure>
-      </div>
+    <section id="worlds" aria-labelledby="world-title">
+      <div class="section-heading"><h2 id="world-title">Fifteen faces<br>of the light.</h2><p>From frosted dawn glass to electric circuits, paper folds, and stained glass. These are captures from the actual game, with the board and crystal materials visible.</p></div>
+      <p class="caption">Current development captures · Seeded QA play with the tide suppressed. Captions name crystal materials; in-game labels may name campaign tracks. Scroll horizontally to see all fifteen.</p>
+      <p><a href="assets/all-15-skins.webp">Open all fifteen skins in one image</a></p>
+      <noscript><p>The individual gallery uses JavaScript. The combined image above contains every skin.</p></noscript>
+      <div id="skin-strip" class="skin-strip" tabindex="0" role="region" aria-label="All fifteen crystal skins"></div>
     </section>
-
-    <section class="world">
-      <div class="world-head">
-        <h3>Crystal Caverns</h3>
-        <span class="meta">World three &middot; Levels 11&ndash;15 &middot; 112&ndash;140 BPM</span>
-      </div>
-      <p>The Pulse Line reflects at the cavern walls, opening a new rhythm of play, and five authored in-engine scores carry the finale through the three-phase Prism Engine.</p>
-      <div class="shots">
-        <figure class="shot"><img src="img/level-11_echo.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level eleven, Echo." /><figcaption><b>Echo</b>112 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-12_facet.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level twelve, Facet." /><figcaption><b>Facet</b>118 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-13_resonance.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level thirteen, Resonance." /><figcaption><b>Resonance</b>124 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-14_faultline.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level fourteen, Faultline." /><figcaption><b>Faultline</b>132 BPM</figcaption></figure>
-        <figure class="shot"><img src="img/level-15_heartstone.webp" width="600" height="1067" loading="lazy" alt="Prism Shift level fifteen, Heartstone." /><figcaption><b>Heartstone</b>140 BPM</figcaption></figure>
-      </div>
+    <section id="accessibility" class="accessibility" aria-labelledby="access-title">
+      <h2 id="access-title">Your rhythm.<br>Your way to see.</h2>
+      <div><p class="intro">Crystal identity goes beyond color. Distinct symbols, high-contrast outlines, color-vision palettes, and adjustable difficulty help keep the board readable.</p><p>Dedicated modes cover protanopia, deuteranopia, tritanopia, their anomaly variants, achromatopsia, and achromatomaly. Reduce Motion and reduced effects let you choose how much the world moves.</p><p>On Apple TV, play with a controller or the Siri Remote. Physical clickpad buttons work with touch tracking disabled; swipes are optional.</p><p class="caption">Accessibility and physical-device testing are ongoing during development.</p></div>
     </section>
-  </section>
-
-  <section class="section wrap" id="music">
-    <div class="sec-head">
-      <p class="eyebrow">Music that reacts</p>
-      <h2>The soundtrack plays you back</h2>
-      <p>
-        Five soundtrack layers respond to board pressure. Crystal tones and Pulse percussion
-        tie your moves to the beat, so a tense board sounds like one.
-      </p>
-    </div>
-    <div class="grid cols-3">
-      <article class="card">
-        <div class="ico" aria-hidden="true">♪</div>
-        <h3>Five adaptive layers</h3>
-        <p>The mix thickens as the board fills and thins out when you clear it. Nothing is on a loop timer.</p>
-      </article>
-      <article class="card">
-        <div class="ico" aria-hidden="true">◎</div>
-        <h3>Tempo-locked play</h3>
-        <p>The Pulse Line sweeps on the beat. Every level is written at its own tempo, 90 to 156 BPM.</p>
-      </article>
-      <article class="card">
-        <div class="ico" aria-hidden="true">⊜</div>
-        <h3>Your mix, your call</h3>
-        <p>Adjust music and sound effects separately, or mute them and let your own music play.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="controls">
-    <div class="sec-head">
-      <p class="eyebrow">Play your way</p>
-      <h2>Controls that get out of the way</h2>
-    </div>
-    <div class="grid cols-2">
-      <article class="card">
-        <h3>Touch</h3>
-        <p>Drag to move, tap to rotate, lower a piece with a downward drag, and commit it with a deliberate flick &mdash; so nothing drops by accident.</p>
-      </article>
-      <article class="card">
-        <h3>Buttons, hybrid or controller</h3>
-        <p>Prefer on-screen buttons, or a mix of both? Switch any time. Connect a compatible game controller, on iPhone, iPad or Apple TV.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="access">
-    <div class="sec-head">
-      <p class="eyebrow">Built to be playable</p>
-      <h2>Accessibility and comfort</h2>
-      <p>Difficulty and presentation are separate choices. Turning one down never locks content away.</p>
-    </div>
-    <div class="grid cols-3">
-      <article class="card">
-        <h3>Gentle Tide</h3>
-        <p>Slows the rising dark tide so you can play the puzzle at your own pace, with the full campaign still open.</p>
-      </article>
-      <article class="card">
-        <h3>Reduce Motion</h3>
-        <p>Calms the cascades, sweeps and background motion while keeping the board perfectly readable.</p>
-      </article>
-      <article class="card">
-        <h3>Three graphics modes</h3>
-        <p>Standard, cel-shaded and premium crystal &mdash; pick the look that reads best for you, or the one that runs coolest.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="more">
-    <div class="grid cols-2">
-      <article class="card">
-        <h3>Lights to restore</h3>
-        <p>Discover eight illustrated achievements, kept locally on your device. No leaderboards to chase and no account to make.</p>
-      </article>
-      <article class="card">
-        <h3>Abyss</h3>
-        <p>An endless mode with its own high score, climbing one pressure tier every two minutes for as long as you can hold it.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="get wrap" id="get">
-    <h2>Coming soon</h2>
-    <p>
-      Prism Shift is in final preparation for the App Store, for iPhone, iPad and Apple TV.
-      No account is needed &mdash; progress, preferences and achievements stay on your device.
-    </p>
-    <div class="cta">
-      <a class="btn btn-primary" href="mailto:iantrimble@remnantsecurity.com?subject=Prism%20Shift">Ask about the beta</a>
-      <a class="btn btn-ghost" href="https://apps.remnantsecurity.com/">More apps</a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="wrap footer-in">
-    <p>&copy; <span id="year">2026</span> Remnant Security</p>
-    <ul>
-      <li><a href="https://remnantsecurity.com/">remnantsecurity.com</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="https://apps.remnantsecurity.com/">More apps</a></li>
-      <li><a href="mailto:iantrimble@remnantsecurity.com">Contact</a></li>
-    </ul>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <section class="closing"><img src="assets/prism.png" alt="" width="110" height="150"><h2>The light awaits.</h2><p>Prism Shift is a non-commercial homebrew project by Ian Trimble.</p><a href="https://remnantsecurity.com/">More from Remnant Security</a></section>
+  </main>
+  <footer><span>PRISM SHIFT</span><span>iPhone · Apple TV</span><a href="https://prismshift.remnantsecurity.com/support.html">Support</a><a href="https://prismshift.remnantsecurity.com/privacy.html">Privacy</a><a href="#main">Back to top</a></footer>
+  <script src="skins.js" defer></script>
 </body>
 </html>
