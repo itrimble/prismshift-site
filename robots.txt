@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prismshift.remnantsecurity.com/sitemap.xml
